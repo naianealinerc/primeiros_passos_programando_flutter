@@ -1,4 +1,4 @@
-# O que é `List`? 
+# List: imutabilidade, construtores e métodos de edição 
 Em Dart, as listas (arrays ou vetores) representa um tipo de coleção de valores que podem ser acessados a partir de um índice.
 
 Uma coleção do tipo `List` é uma sub-classe de uma classe abstrata chamada `Iterable`. 
@@ -159,3 +159,20 @@ Nesse caso, foram removidos os 2 primeiros elementos da lista. Se atentando que:
 Assim, o método removeu todos os elementos que estão entre o índice 0 e o índice 2. 
 
 - `list.clear` - remove todos os objetos da lista e a transforma em uma lista vazia, com um tamanho de 0. Porém, se a lista for do tipo **growable**, ela continua sendo deste tipo, podendo receber novos elementos. 
+
+## Outros métodos úteis 
+- `list.contains()` - verifica se a lista possui um elemento passado como argumento do método. O método retorna um valor **booleano**; 
+
+- `list.sort()` - ordena os elementos da lista em ordem crescente;
+
+Exemplo
+
+~~~dart
+List<int> exemplo = [3, 2, 1, 4, 5];
+exemplo.removeRange(0, 3);
+print(exemplo);
+~~~
+Saída
+```
+[1, 2, 3, 4, 5]
+```

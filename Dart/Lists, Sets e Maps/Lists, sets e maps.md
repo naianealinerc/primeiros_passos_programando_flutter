@@ -110,7 +110,7 @@ A saída seria:
 ### Transformando o tipo de dado de objetos de uma Coleção
 Se você precisa transformar o tipo de dado de todos os elementos de uma lista (por exemplo, precisa transformar dados do tipo `int` em `double`), é possível usar o método do tipo `map()`
 
-- `map()` - esse método retorna um novo iterável contendo todos os objetos da coleção transformados em objetos de um novo tipo. Exemplo prático: 
+- `map()` - o método passa por cada um dos elementos realizando uma ação; na prática, funciona como um loop que passa por cada um dos elementos da lista. O retorno desse método é um tipo `Iterable`. 
 
 ~~~dart 
 void main() {
