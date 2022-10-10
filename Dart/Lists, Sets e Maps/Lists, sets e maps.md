@@ -1,24 +1,28 @@
-# O que são as listas em Dart? 
-Em Dart, as listas (`arrays` ou vetores) representa um conjunto de valores que podem ser acessados a partir de um índice. 
+# Lists, Sets e Maps: O que são as coleções em Dart? 
+Em Dart, as Coleções representam um conjunto de valores que podem ser acessados a partir de um índice. 
 
 Isso significa que você pode ler, alterar ou remover os objetos da lista com facilidade, por meio de métodos específicos. 
 
-Diferente de outras linguagens que podem chamar as listas de `array`, um dado do tipo Lista em Dart é chamado de `list`.
+Entre os tipos de Coleções em Dart, temos os de tipo `List`, `Set` e `Maps`. Diferente de outras linguagens que podem chamar listas ou coleções de `array`.
 
 # Entendendo as Coleções de objetos em Dart
-As listas são uma sub-classe de uma classe abstrata chamada `Iterable`. A classe Iterable represeta qualquer tipo de coleção de objetos em Dart. 
+As coleções derivam de uma classe abstrata chamada `Iterable`. A classe Iterable represeta qualquer tipo de coleção de objetos em Dart. 
 
 Enquanto uma classe abstrata, `Iterable` não pode instanciar nenhum objeto. Isso sigifnica que você não consegue criar uma nova coleção declarando-a apenas como uma `Iterable`. 
 
 Porém, é certo que você pode explorar os atributos e métodos de `Iterable` em qualquer coleção de objetos. 
 
-**Mas onde o tipo `list` entra nessa história?**
+**As coleções comumente são de 3 tipos: **
 
-O tipo `list`, enquanto uma sub-classe de `Iterable`, é um dos tipos de coleções possíveis. As coleções comumente são de 3 tipos: 
+## List
 
-- `List` → coleção de objetos usada para ler elementos a partir de um index. Esse tipo de coleção também permite adicionar, alterar, substituir e até remover itens por meio do uso do `index`;
-- `Set` → coleção de objetos usada para conter elementos que ocorrem apenas uma vez dentro da lista. Ou seja, caso um elemento idêntico a outro já existente for inserido no Set, ainda assim a coleção só vai mostrar 1 desses elementos. É ótimo para usos em que você precisa ter certeza de que não haverão informações duplicadas;
-- `Map` → coleção de objetos usada para ler e identificar elementos a partir de uma `Key`. Os Maps possuem uma `Key` que referenciam um valor associado. Um Map pode ser entendido como um dicionário, já que a busca por objetos dentro da coleção perpassa apenas pelo uso da `Key` que referencia o objeto.
+Coleção de objetos usada para ler elementos a partir de um index. 
+Esse tipo de coleção também permite adicionar, alterar, substituir e até remover itens por meio do uso do `index`;
+
+## Set
+Coleção de objetos usada para conter elementos que ocorrem apenas uma vez dentro da lista. Ou seja, caso um elemento idêntico a outro já existente for inserido no Set, ainda assim a coleção só vai mostrar 1 desses elementos. É ótimo para usos em que você precisa ter certeza de que não haverão informações duplicadas;
+## Map
+Coleção de objetos usada para ler e identificar elementos a partir de uma `Key`. Os Maps possuem uma `Key` que referenciam um valor associado. Um Map pode ser entendido como um dicionário, já que a busca por objetos dentro da coleção perpassa apenas pelo uso da `Key` que referencia o objeto.
 
 Importante lembrar que todos esses tipos de coleções são sub-classes (ou filhas) de `Iterable`, e por isso contam com métodos e atributos em comum. Porém, cada uma também possui métodos e atributos específicos, e por isso são usadas em contextos diferentes. 
 
